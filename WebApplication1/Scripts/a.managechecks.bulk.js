@@ -29,8 +29,8 @@
 				validationFunctions.push({
 					validator: function () {
 						if (!isEnableFunc()) return true;
-						if (urlString.trim() == "") return false;
-						return true;
+						return !(urlString.trim() == "");
+						
 					},
 					message: emptyFieldsMessage
 				});
