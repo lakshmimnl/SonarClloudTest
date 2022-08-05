@@ -280,8 +280,7 @@
 		self.reportWhen = ko.observable().extend({
 			validation: {
 				validator: function () {
-					if (self.reportIncluded() && !self.reportDaily() && !self.reportWeekly()) return false;
-					return true;
+					return !! (self.reportIncluded() && !self.reportDaily() && !self.reportWeekly());
 				},
 				message: 'Please select one or all checkboxes'
 			}

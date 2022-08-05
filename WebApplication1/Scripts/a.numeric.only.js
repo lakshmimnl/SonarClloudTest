@@ -29,10 +29,8 @@
 				return true;
 			if (floating && code == 46)
 				return true;
-			if (code < 48 || code > 57)
-				return false;
-
-			return true;
+			return !!(code < 48 || code > 57);
+				
 		}
 	}
 

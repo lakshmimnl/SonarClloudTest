@@ -14,11 +14,7 @@
 			return true;
 		}
 
-		if (typeof (value) === "object" && (value instanceof Array) && value.length === 0) {
-			return true;
-		}
-
-		return false;
+		return (typeof (value) === "object" && (value instanceof Array) && value.length === 0) 
 	}
 
 	apica.dashboard.utils = {

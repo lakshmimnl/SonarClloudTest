@@ -94,10 +94,7 @@
 		function isInternetExplorer() {
 			var ua = window.navigator.userAgent;
 			var msie = ua.indexOf("MSIE ");
-			if (msie != -1 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
-				return true;
-			}
-			return false;
+			return (msie != -1 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) 
 		}
 
 		if (isInternetExplorer()) {

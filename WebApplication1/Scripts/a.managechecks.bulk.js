@@ -29,7 +29,7 @@
 				validationFunctions.push({
 					validator: function () {
 						if (!isEnableFunc()) return true;
-						return !(urlString.trim() == "");
+						return !!(urlString.trim() == "");
 						
 					},
 					message: emptyFieldsMessage
@@ -128,8 +128,8 @@
 				validationFunctions.push({
 					validator: function () {
 						if (!isEnableFunc()) return true;
-						if (statusCode.trim() == "" || fileType == "") return false;
-						return true;
+						return !!(statusCode.trim() == "" || fileType == "");
+						
 					},
 					message: emptyFieldsMessage
 				});
