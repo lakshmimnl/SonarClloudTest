@@ -1,5 +1,5 @@
 ﻿(function() {
-	namespace('apica.threshold.stats');
+	namespace('a.threshold.stats');
 
 	apica.threshold.stats.ThresholdStats = function (seriesId, sourceDetailTitles, metricName, metricUnit) {
 		var self = this;

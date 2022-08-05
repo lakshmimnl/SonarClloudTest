@@ -1,4 +1,4 @@
-﻿namespace("apica.dashboard");
+﻿namespace("a.dashboard");
 
 (function (window) {
 	function empty(value) {

@@ -1,5 +1,5 @@
 ﻿(function (window) {
-	namespace('apica.trialsignup');
+	namespace('a.trialsignup');
 
 	var emptyCountryText = "Select country";
 	var emptyLocationText = "Select location";

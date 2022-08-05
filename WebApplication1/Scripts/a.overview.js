@@ -1,4 +1,4 @@
-﻿namespace("apica.overview");
+﻿namespace("a.overview");
 
 var tooltipOffset = 200;
 var app;
